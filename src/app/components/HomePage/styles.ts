@@ -5,3 +5,9 @@ export const ContainerHome = styled.div`
     justify-content: center;
     
 `
+
+export const SectionCurrency = styled.div`
+    display: flex;
+    flex-direction: column;
+   
+`
