@@ -63,7 +63,7 @@ export const FieldTaxes = styled.div`
 
 
 export const LabelTaxes = styled.p`
-    width: 43px;
+    width: 83px;
     height: 21px;
     font-size: 18px;
     font-weight: 500;
