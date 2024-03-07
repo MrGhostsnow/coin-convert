@@ -5,7 +5,6 @@ export const ContainerHeader = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 1px solid red;
     width: 538px;
     height: 81px;
 `;

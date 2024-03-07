@@ -7,6 +7,8 @@ export const ContainerCurrencyCard = styled.div`
     width: 360px;
     height: 268px;
     gap: 32px;    
+    margin-top: 64px;
+    margin-left: 48px;
 `;
 
 
