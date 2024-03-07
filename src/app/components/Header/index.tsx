@@ -6,9 +6,10 @@ import {
   LabelHeader,
   SectionDateTime,
   TimeHeader,
+  Image,
 } from "./styles";
+// import Image from "next/image";
 import logo from "../../assets/logo.png";
-import Image from "next/image";
 
 const Header: React.FC = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -37,7 +38,7 @@ const Header: React.FC = () => {
 
   return (
     <ContainerHeader>
-      <Image src={logo} alt="logo" width={163} height={81} />
+      <Image src="../../assets/logo.png" alt="logo" />
       <InfoHeader>
         <SectionDateTime>
           <DateHeader>{formatDate(currentDate)}</DateHeader>

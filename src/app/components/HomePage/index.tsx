@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { ContainerHome, SectionCurrency } from "./styles";
+import { ContainerHome, SectionCurrency, ImageHome } from "./styles";
 import Header from "../Header";
 import bg_home from "../../assets/bg_home.png";
 import CurrencyCard from "../CurrencyCard";
@@ -54,7 +54,12 @@ const HomePage: React.FC = () => {
           />
         )}
       </SectionCurrency>
-      <Image src={bg_home} alt="background-home" width={1340} height={1024} />
+      <ImageHome
+        src="../../assets/bg_home.png"
+        alt="background-home"
+        width={1340}
+        height={1024}
+      />
     </ContainerHome>
   );
 };

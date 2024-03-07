@@ -12,3 +12,8 @@ export const SectionCurrency = styled.div`
     margin-left: 48px;
     margin-top: 64px;
 `
+
+export const ImageHome = styled.img`
+    width: 1340px;
+    height: 1024px;
+`

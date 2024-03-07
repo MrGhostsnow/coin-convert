@@ -9,6 +9,11 @@ export const ContainerHeader = styled.div`
     height: 81px;
 `;
 
+export const Image = styled.img`
+    width: 163px;
+    height: 81px;
+`
+
 export const DateHeader = styled.p`
     color: #45505E;
     font-size: 18px;

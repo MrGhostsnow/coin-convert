@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { CurrencyCardProps } from "@/app/interfaces/CurrencyCard";
+import axios from "axios";
 import {
   ContainerCurrencyCard,
   FormBank,
@@ -36,10 +37,10 @@ const CurrencyCard: React.FC<CurrencyCardProps> = ({
   });
 
   useEffect(() => {
-    fetch("https://economia.awesomeapi.com.br/last/USD-BRL")
-      .then((response) => response.json())
-      .then((data) => {
-        const exchangeRate = parseFloat(data?.USDBRL?.bid);
+    axios
+      .get("https://economia.awesomeapi.com.br/last/USD-BRL")
+      .then((response) => {
+        const exchangeRate = parseFloat(response.data?.USDBRL?.bid);
         setExchangeRate(exchangeRate);
         onExchangeRateChange(exchangeRate);
       })
@@ -134,6 +135,7 @@ const CurrencyCard: React.FC<CurrencyCardProps> = ({
         <FieldCurrency>
           <LabelCurrency>Dólar</LabelCurrency>
           <InputCurrency
+            data-testid="Dólar"
             type="text"
             value={currencyValue}
             onChange={handleCurrencyChange}
