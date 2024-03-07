@@ -54,12 +54,7 @@ const HomePage: React.FC = () => {
           />
         )}
       </SectionCurrency>
-      <ImageHome
-        src="../../assets/bg_home.png"
-        alt="background-home"
-        width={1340}
-        height={1024}
-      />
+      <Image src={bg_home} alt="background-home" width={1340} height={1024} />
     </ContainerHome>
   );
 };
